@@ -120,7 +120,6 @@ li>a {
 #sidebar {
     width: 230px;
     height: calc(100vh - 90px);
-
     background-color: var(--sp-sidebar);
     position: fixed;
     left: 0;
