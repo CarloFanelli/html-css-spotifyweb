@@ -6,6 +6,8 @@
 
 :root{
     --sp-sidebar: rgba(0, 1, 1, 1);
+    --sp-semitransparent: rgba(0, 1, 1, 0.5);
+
     --sp-footer: rgba(41, 40, 41, 1);
     --sp-navigation: rgba(21, 24, 34, 1);
     --sp-light:rgba(254, 255, 254, 1);
@@ -17,6 +19,10 @@
     font-family: 'DM Sans', sans-serif;
 }
 
+h3{
+    color: var(--sp-light);
+}
+
 /* #region Utility */
 
 .d-flex{
@@ -25,18 +31,21 @@
 .p-1{
     padding: 1rem;
 }
-
+.btn-transparent{
+    border: 1px solid var(--sp-light);
+    width: 15%;
+}
 
 /* #endregion Utility */
 
 
 /* #region Common */
 .collection{
-    width: 250px;
+    width: calc(100%/12 * 2);
     padding-right: 1rem;
 }
 .artist{
-    width: 250px;
+    width: calc(100%/12 * 2);
     padding-right: 1rem;
 }
 
@@ -75,7 +84,9 @@ nav{
 .playlist{
     color: var(--sp-darker-light);
 }
-
+.sidebar-bottom{
+    bottom: 0;
+}
 /* #endregion Sidebar */
 
 
@@ -86,6 +97,10 @@ nav{
     width: calc(100vw - 230px);
     position: absolute;
     right: 0;
+}
+
+.upgrade{
+    background-color: var(--sp-semitransparent);
 }
 
 #navigation .content.d-flex{
@@ -115,6 +130,28 @@ border-radius: 50%;
 }
 
 /* #endregion Footer */
+
+@media screen and (max-width: 1200px) {
+    .collection{
+        width: calc(100%/12 * 4);
+        padding-right: 1rem;
+    }
+    .artist{
+        width: calc(100%/12 * 4);
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .collection{
+        width: calc(100%/12 * 6);
+        padding-right: 1rem;
+    }
+    .artist{
+        width: calc(100%/12 * 6);
+        padding-right: 1rem;
+    }
+}
 
 @media screen and (max-width: 475px) {
     #sidebar{
