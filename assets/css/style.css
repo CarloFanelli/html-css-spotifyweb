@@ -24,9 +24,26 @@ span{
 }
 h3 {
     color: var(--sp-light);
-    font-size: 1.5rem;
     font-weight: 600;
 }
+h2{
+    color: var(--sp-light);
+}
+
+::-webkit-scrollbar{
+    z-index: 10;
+    width: 0.6rem;
+}
+::-webkit-scrollbar-track {
+    background: var(--sp-light); 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--sp-darker-light); 
+    border-radius:10px;
+}
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+} */
 
 /* #region Utility */
 
@@ -41,16 +58,21 @@ h3 {
 .btn-transparent {
     border: 1px solid var(--sp-light);
     border-radius: 20px;
-    width: 20%;
+    width: calc(100%/12 * 2);
     margin: 1.5rem;
     padding: 0.5rem 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .btn-transparent a {
     text-decoration: none;
     color: var(--sp-light);
     text-transform: uppercase;
+    font-size: 1vw;
+    line-height: 1vw;
 }
 
 /* #endregion Utility */
@@ -58,16 +80,16 @@ h3 {
 
 /* #region Common */
 #navigation>.container>section{
-    padding:0 1rem;
+    padding-top: 1.5rem;
 }
 
-section>h3{
+section>h2{
     padding: 1rem;
 }
 
 .collection {
     width: calc(100%/12 * 2);
-    padding: 1.5rem 1rem;
+    padding: 0.5rem 1rem;
     text-align: center;
 }
 #navigation>.container h4{
@@ -76,7 +98,7 @@ section>h3{
 }
 .artist {
     width: calc(100%/12 * 2);
-    padding: 1.5rem 1rem;
+    padding: 0.5rem 1rem;
     text-align: center;
 
 }
@@ -97,6 +119,8 @@ li>a {
 
 #sidebar {
     width: 230px;
+    height: calc(100vh - 90px);
+
     background-color: var(--sp-sidebar);
     position: fixed;
     left: 0;
@@ -136,6 +160,7 @@ nav {
     background-color: var(--sp-navigation);
     overflow: scroll;
     width: calc(100vw - 230px);
+    height: calc(100vh - 90px);
     position: absolute;
     right: 0;
 }
@@ -167,7 +192,8 @@ nav {
 #navigation .navbar li{
     padding: 1rem;
     text-transform: uppercase;
-    flex-wrap: wrap;
+    color: var(--sp-darker-light);
+    letter-spacing: 1px;
 }
 
 /* #endregion navigation */
@@ -199,24 +225,24 @@ nav {
 @media screen and (max-width: 1200px) {
     .collection {
         width: calc(100%/12 * 4);
-        padding: 1.5rem 1rem;
+        padding: 0.5rem 1rem;
     }
 
     .artist {
         width: calc(100%/12 * 4);
-        padding: 1.5rem 1rem;
+        padding: 0.5rem 1rem;
     }
 }
 
 @media screen and (max-width: 768px) {
     .collection {
         width: calc(100%/12 * 6);
-        padding: 1.5rem 1rem;
+        padding: 0.5rem 1rem;
     }
 
     .artist {
         width: calc(100%/12 * 6);
-        padding: 1.5rem 1rem;
+        padding: 0.5rem 1rem;
     }
 }
 
