@@ -4,6 +4,139 @@
     box-sizing: border-box;
 }
 
+:root{
+    --sp-sidebar: rgba(0, 1, 1, 1);
+    --sp-footer: rgba(41, 40, 41, 1);
+    --sp-navigation: rgba(21, 24, 34, 1);
+    --sp-light:rgba(254, 255, 254, 1);
+    --sp-darker-light: rgba(162, 162, 163, 1);
+    --sp-evidence: rgba(172, 255, 46, 1);
+}
+
 *{
     font-family: 'DM Sans', sans-serif;
 }
+
+/* #region Utility */
+
+.d-flex{
+    display: flex;
+}
+.p-1{
+    padding: 1rem;
+}
+
+
+/* #endregion Utility */
+
+
+/* #region Common */
+.collection{
+    width: 250px;
+    padding-right: 1rem;
+}
+.artist{
+    width: 250px;
+    padding-right: 1rem;
+}
+
+li>a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* #endregion Common */
+
+/* #region MAIN */
+#site-main{
+    height: calc(100vh - 90px);
+}
+
+
+/* #region Sidebar */
+
+#sidebar{
+    width: 230px;
+    background-color: var(--sp-sidebar);
+    position: fixed;
+    left: 0;
+}
+.logo{
+    padding: 2rem 4rem 2rem 1rem;
+}
+nav{
+    color: var(--sp-light);
+}
+.menu li, .playlist li{
+    list-style: none;
+
+}
+
+.playlist{
+    color: var(--sp-darker-light);
+}
+
+/* #endregion Sidebar */
+
+
+/* #region navigation */
+#navigation{
+    background-color: var(--sp-navigation);
+    overflow: scroll;
+    width: calc(100vw - 230px);
+    position: absolute;
+    right: 0;
+}
+
+#navigation .content.d-flex{
+    flex-wrap: wrap;
+}
+/* #endregion navigation */
+.collection img{
+    max-width: 100%;
+}
+.artist img{
+    max-width: 100%;
+border-radius: 50%;
+}
+
+/* #endregion MAIN */
+
+
+
+/* #region Footer */
+#site-footer{
+    height: 90px;
+    z-index: 1;
+    background-color: var(--sp-footer);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* #endregion Footer */
+
+@media screen and (max-width: 475px) {
+    #sidebar{
+        width: 50px;
+    }
+    #navigation{
+        width: calc(100% - 50px);
+    }
+}
+
+
+
+
+
+
+/* #region DEBUG */
+
+.debug #sidebar{
+    height: calc(100vh - 90px);
+}
+.debug #navigation{
+    height: calc(100vh - 90px);
+}
+/* #endregion DEBUG */
+
