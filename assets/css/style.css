@@ -136,15 +136,33 @@ li>a {
     width: 230px;
     height: 100%;
     background-color: var(--sp-sidebar);
-    z-index: 2;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.side-big{
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo {
-    padding: 2rem 4rem 2rem 1rem;
+    padding: 0.5rem 4rem 2rem 0;
 }
 
-nav {
+nav.menu {
     color: var(--sp-light);
+}
+
+.menu li{
+    display: flex;
+    align-items: center;
+}
+.menu li>img{
+    width: 1.5rem ;
+}
+.menu li a{
+    padding-left: 1rem;
 }
 
 .menu li,
@@ -154,13 +172,73 @@ nav {
     list-style: none;
 
 }
+.playlist{
+    padding: 1.5rem 0;
+}
 
-.playlist {
+.playlist>.create, .playlist>.playlist-list {
+    color: var(--sp-darker-light);
+    padding: 0.5rem 0;
+}
+.playlist>h4{
+    color: var(--sp-light);
+    text-transform: uppercase;
+}
+.create{
+    align-items: center;
+}
+
+ .create>.add{
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--sp-darker-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add>i{
+    color: var(--sp-sidebar);
+}
+
+.create>h4{
+    padding-left: 0.5rem;
+}
+
+.playlist-list{
+    max-height: 50%;
+}
+
+.playlist-list li{
+    padding: 0.5rem 0;
+}
+
+.side-big-bottom .instal>*{
     color: var(--sp-darker-light);
 }
 
-.sidebar-bottom {
-    bottom: 0;
+.side-big-bottom .instal{
+    align-items:center;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--sp-darker-light);
+    padding-bottom: 0.5rem;
+}
+
+.side-big-bottom .user{
+    padding-top: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.side-big-bottom .user-img{
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.2rem;
+    background-color: var(--sp-darker-light);
+    border-radius: 50%;
+}
+
+.user-img>img{
+    aspect-ratio: 1;
 }
 
 /* #endregion Sidebar */
@@ -286,6 +364,10 @@ nav {
 @media screen and (max-width: 475px) {
     #sidebar {
         width: 50px;
+    }
+
+    .side-big{
+        display: none;
     }
 
     #navigation {
