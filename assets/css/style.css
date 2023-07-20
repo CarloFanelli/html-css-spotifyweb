@@ -61,7 +61,7 @@ h2{
 .btn-transparent {
     border: 1px solid var(--sp-light);
     border-radius: 20px;
-    width: calc(100%/12 * 2);
+    width: calc(100%/12 * 4);
     margin: 1.5rem;
     padding: 0.5rem 1rem;
     display: flex;
