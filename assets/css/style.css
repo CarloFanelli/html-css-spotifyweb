@@ -54,6 +54,9 @@ h2{
 .p-1 {
     padding: 1rem;
 }
+.px-1{
+    padding: 0 1rem;
+}
 
 .btn-transparent {
     border: 1px solid var(--sp-light);
@@ -142,7 +145,6 @@ li>a {
     background-color: var(--sp-sidebar);
     z-index: 1;
     overflow: hidden;
-    padding: 1rem;
 }
 
 .side-big{
@@ -152,8 +154,7 @@ li>a {
 }
 
 .logo {
-    padding: 0.5rem 4rem 2rem 0;
-}
+width: 80%;}
 
 nav.menu {
     color: var(--sp-light);
@@ -167,7 +168,10 @@ nav.menu {
     width: 1.5rem ;
 }
 .menu li a{
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+}
+.menu li.active{
+    border-left: 3px solid var(--sp-evidence);
 }
 
 .menu li,
@@ -178,7 +182,7 @@ nav.menu {
 
 }
 .playlist{
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
 }
 
 .playlist>.create, .playlist>.playlist-list {
@@ -248,6 +252,8 @@ nav.menu {
 .side-small{
     display: none;
 }
+
+
 /* #endregion Sidebar */
 
 
@@ -403,6 +409,8 @@ justify-content: center;    }
 
     .logo{
         padding: 0;
+        margin: 0 auto;
+
     }
 
     .side-small{
