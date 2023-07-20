@@ -75,6 +75,16 @@ h2{
     line-height: 1vw;
 }
 
+a.active:after {
+    content: "";
+    border: 1px solid var(--sp-evidence);
+    position: absolute;
+    width: 30%;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 /* #endregion Utility */
 
 
@@ -119,7 +129,7 @@ li>a {
 
 #sidebar {
     width: 230px;
-    height: calc(100vh - 90px);
+    /* height: calc(100vh - 90px); */
     background-color: var(--sp-sidebar);
     position: fixed;
     left: 0;
@@ -189,6 +199,7 @@ nav {
 
 
 #navigation .navbar li{
+    position: relative;
     padding: 1rem;
     text-transform: uppercase;
     color: var(--sp-darker-light);
@@ -214,8 +225,8 @@ nav {
     height: 90px;
     z-index: 1;
     background-color: var(--sp-footer);
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
     width: 100%;
 }
 
