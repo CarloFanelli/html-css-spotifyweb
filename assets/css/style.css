@@ -113,6 +113,10 @@ section>h2{
 
 }
 
+.cover{
+    position: relative;
+}
+
 li>a {
     text-decoration: none;
     color: inherit;
@@ -166,11 +170,10 @@ nav {
 #navigation {
     padding-top: 90px;
     background-color: var(--sp-navigation);
-    overflow: scroll;
+    overflow-y: scroll;
     width: calc(100vw - 230px);
     height: calc(100vh - 90px);
-    position: absolute;
-    right: 0;
+    
 }
 
 .upgrade {
@@ -213,6 +216,31 @@ nav {
 .artist img {
     max-width: 100%;
     border-radius: 50%;
+}
+
+.play-now{
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio:1;
+    background: var(--sp-semitransparent);
+}
+.play-now i{
+    color: var(--sp-light);
+    font-size: 3rem;
+}
+.artist .play-now{
+    border-radius: 50%;
+}
+
+.play-now{
+    display: none;
+}
+
+.cover:hover .play-now{
+    display: flex;
 }
 
 /* #endregion MAIN */

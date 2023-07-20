@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotify</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -13,7 +17,7 @@
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 
-    <body class="">
+    <body class>
         <main id="site-main">
             <section id="sidebar" class="p-1">
 
@@ -36,25 +40,25 @@
                     <div class="playlist-list">
                         <ul>
                             <li>
-                                <P>Nome Playlist</P>
+                                <p>Nome Playlist</p>
                             </li>
                             <li>
-                                <P>Nome Playlist</P>
+                                <p>Nome Playlist</p>
                             </li>
                             <li>
-                                <P>Nome Playlist</P>
+                                <p>Nome Playlist</p>
                             </li>
                             <li>
-                                <P>Nome Playlist</P>
+                                <p>Nome Playlist</p>
                             </li>
                             <li>
-                                <P>Nome Playlist</P>
+                                <p>Nome Playlist</p>
                             </li>
                             <li>
-                                <P>Nome Playlist</P>
+                                <p>Nome Playlist</p>
                             </li>
                             <li>
-                                <P>Nome Playlist</P>
+                                <p>Nome Playlist</p>
                             </li>
                         </ul>
                     </div>
@@ -64,20 +68,19 @@
 
                 <div class="sidebar-bottom">
 
-                
-                <!-- /.sidebar-bottom -->
-                <div class="instal">
-                    <h4>Installa app</h4>
-                </div>
-                <!-- /.instal -->
+                    <!-- /.sidebar-bottom -->
+                    <div class="instal">
+                        <h4>Installa app</h4>
+                    </div>
+                    <!-- /.instal -->
 
-                <div class="user">
-                    <h3>John Doe</h3>
+                    <div class="user">
+                        <h3>John Doe</h3>
+                    </div>
+                    <!-- /.user -->
                 </div>
-                <!-- /.user -->
-            </div>
-            
-        </section>
+
+            </section>
             <!-- /#sidebar -->
 
             <section id="navigation">
@@ -106,42 +109,81 @@
                         <div class="content d-flex">
 
                             <div class="collection">
-                                <img src="./assets/img/metal_lifting.jpg" alt>
+                                <div class="cover">
+
+                                    <img src="./assets/img/metal_lifting.jpg"
+                                        alt>
+                                    <div class="play-now">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+
+                                </div>
                                 <h4 class="title">Heavy metal</h4>
                                 <span class="subtitle">Subtitle</span>
                             </div>
                             <!-- /.collection -->
 
                             <div class="collection">
-                                <img src="./assets/img/stranger.jpeg" alt>
-                                <h4 class="title">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
-                                <span class="subtitle">Kyle Dixon & Michael Stein</span>
+                                <div class="cover">
+                                    <img src="./assets/img/stranger.jpeg" alt>
+                                    <div class="play-now">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <h4 class="title">Stranger Things, Vol. 1 (a
+                                    Netflix Original Series Soundtrack)</h4>
+                                <span class="subtitle">Kyle Dixon & Michael
+                                    Stein</span>
                             </div>
                             <!-- /.collection -->
 
                             <div class="collection">
-                                <img src="./assets/img/aquietplace.jpeg" alt>
+                                <div class="cover">
+
+                                    <img src="./assets/img/aquietplace.jpeg" alt>
+                                    <div class="play-now">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h4 class="title">A quiet place</h4>
                                 <span class="subtitle">Subtitle</span>
                             </div>
                             <!-- /.collection -->
 
                             <div class="collection">
-                                <img src="./assets/img/split.jpeg" alt>
+                                <div class="cover">
+
+                                    <img src="./assets/img/split.jpeg" alt>
+                                    <div class="play-now">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h4 class="title">Split</h4>
                                 <span class="subtitle">Subtitle</span>
                             </div>
                             <!-- /.collection -->
 
                             <div class="collection">
-                                <img src="./assets/img/cure.jpeg" alt>
+                                <div class="cover">
+
+                                    <img src="./assets/img/cure.jpeg" alt>
+                                    <div class="play-now">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h4 class="title">A cure for wellness</h4>
                                 <span class="subtitle">Subtitle</span>
                             </div>
                             <!-- /.collection -->
 
                             <div class="collection">
-                                <img src="./assets/img/sinister.jpeg" alt>
+                                <div class="cover">
+
+                                    <img src="./assets/img/sinister.jpeg" alt>
+                                    <div class="play-now">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h4 class="title">Sinister</h4>
                                 <span class="subtitle">Subtitle</span>
                             </div>
@@ -153,19 +195,32 @@
 
                     <section class="create-for">
                         <h2>Creato per John Doe</h2>
-                        <span class="p-1">più ascolti più accurati saranno i suggerimenti</span>
+                        <span class="p-1">più ascolti più accurati saranno i
+                            suggerimenti</span>
                         <div class="content d-flex">
                             <div class="collection">
-                                <img src="./assets/img/radar.jpeg" alt>
+                                <div class="cover">
+
+                                    <img src="./assets/img/radar.jpeg" alt>
+                                    <div class="play-now">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h4 class="title">Release Radar</h4>
-                                
+
                             </div>
                             <!-- /.collection -->
 
                             <div class="collection">
-                                <img src="./assets/img/mixdaily.jpeg" alt>
+                                <div class="cover">
+
+                                    <img src="./assets/img/mixdaily.jpeg" alt>
+                                    <div class="play-now">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h4 class="title">Daily Mix 1</h4>
-                                
+
                             </div>
                             <!-- /.collection -->
 
@@ -177,21 +232,34 @@
 
                     <section class="suggested-artists">
                         <h2>Artisti più popolari</h2>
-                        <span class="p-1">più ascolti più accurati saranno i suggerimenti</span>
+                        <span class="p-1">più ascolti più accurati saranno i
+                            suggerimenti</span>
                         <div class="content d-flex">
 
                             <div class="artist">
-                                <img src="./assets/img/youg.jpeg" alt>
+                                <div class="cover">
+
+                                    <img src="./assets/img/youg.jpeg" alt>
+                                    <div class="play-now">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h4 class="title">Lana del Ray</h4>
                             </div>
                             <!-- /.artist -->
 
                             <div class="artist">
-                                <img src="./assets/img/einaudi.jpeg" alt>
+                                <div class="cover">
+
+                                    <img src="./assets/img/einaudi.jpeg" alt>
+                                    <div class="play-now">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h4 class="title">Ludovico Einaudi</h4>
                             </div>
                             <!-- /.artist -->
-                        
+
                         </div>
 
                     </section>
