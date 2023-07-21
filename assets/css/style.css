@@ -372,14 +372,13 @@ footer i {
     color: var(--sp-light);
 }
 
-footer .song .other i{
+footer .song .other i {
     color: var(--sp-darker-light);
 }
 
 footer .song,
 footer .other-controls {
-    width: 15%;
-    justify-content: space-between;
+    width: 20%;
 }
 
 footer .reproduction {
@@ -400,8 +399,10 @@ footer .content>div {
 
 footer .song {
     align-items: center;
+    gap: 0.5rem;
 }
-footer .song .cover{
+
+footer .song .cover {
     height: 3rem;
     aspect-ratio: 1;
 }
@@ -411,60 +412,70 @@ footer .song .cover img {
     aspect-ratio: 1;
 }
 
-footer .song .details{
-    padding-right: 2.5rem;
-}
-footer .song .details h5{
+footer .song .details h5 {
     color: var(--sp-light);
 }
-footer .song .details h6{
+
+footer .song .details h6 {
     color: var(--sp-darker-light);
 }
 
-footer .reproduction .controls{
-    width: 35%;
+footer .song .other {
+    width: 25%;
+    justify-content: space-around;
+}
+
+footer .reproduction .controls {
+    width: 40%;
     margin: 0 auto;
     justify-content: space-evenly;
     align-items: center;
 }
-footer .reproduction .controls .fa-circle-play{
+
+footer .reproduction .controls .fa-circle-play {
     font-size: 1.6rem;
 }
 
-footer .reproduction .time{
+footer .reproduction .time {
     justify-content: space-between;
     align-items: center;
 }
 
-footer .reproduction .time .total{
+footer .reproduction .time span {
+    font-size: 0.5rem;
+}
+
+footer .reproduction .time .total {
     width: 80%;
     height: 0.2rem;
     background-color: var(--sp-darker-light);
     border-radius: 10px;
 }
-footer .reproduction .time .actual{
+
+footer .reproduction .time .actual {
     width: 30%;
     background-color: var(--sp-light);
     height: 100%;
     border-radius: 10px;
 }
 
-footer .other-controls{
+footer .other-controls {
     align-items: center;
+    justify-content: space-evenly;
 }
 
-footer .other-controls .volume{
+footer .other-controls .volume {
     width: 50%;
 }
 
-footer .other-controls .volume .total{
+footer .other-controls .volume .total {
     width: 100%;
     height: 0.2rem;
     background-color: var(--sp-darker-light);
     border-radius: 10px;
 }
 
-footer .other-controls .volume .actual{
+footer .other-controls .volume .actual {
     width: 25%;
     background-color: var(--sp-light);
     height: 100%;
@@ -472,6 +483,9 @@ footer .other-controls .volume .actual{
 }
 
 /* #endregion Footer */
+
+
+
 
 @media screen and (max-width: 1200px) {
     .collection {
@@ -487,6 +501,16 @@ footer .other-controls .volume .actual{
     .btn-transparent {
         width: calc(100%/12 * 5);
     }
+
+    /* #region FOOTER */
+
+
+    footer .reproduction .controls {
+        width: 70%;
+    }
+
+    /* #endregion FOOTER */
+
 }
 
 @media screen and (max-width: 768px) {
@@ -503,6 +527,32 @@ footer .other-controls .volume .actual{
     .btn-transparent {
         width: calc(100%/12 * 5);
     }
+
+    /* #region FOOTER */
+    
+    footer .song, footer .other-controls {
+        width: 25%;
+    }
+    footer .reproduction {
+        width: 50%;
+        text-align: center;
+    }
+
+    footer .song .other {
+        gap: 0.5rem;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    footer .reproduction .controls {
+        width: 90%;
+    }
+
+    footer .song, footer .reproduction, footer .other-controls{
+        scale: 0.9;
+    }
+    /* #endregion FOOTER */
+
+
 }
 
 @media screen and (max-height:768px) {
@@ -584,6 +634,18 @@ footer .other-controls .volume .actual{
     .btn-transparent {
         width: calc(100%/12 * 6);
     }
+
+    /* #region FOOTER */
+    footer .reproduction .controls {
+        width: 95%;
+    }
+
+    footer .song, footer .reproduction, footer .other-controls>i, footer .other-controls>.volume{
+        scale: 0.7;
+    }
+
+    /* #endregion FOOTER */
+
 
 }
 
