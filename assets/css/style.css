@@ -648,6 +648,7 @@ footer .other-controls .volume .actual {
 
     .menu li {
         justify-content: center;
+        padding: 0.5rem 0;
     }
 
     #navigation {
